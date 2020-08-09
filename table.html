@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Insert title here</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <script src="table.js"></script>
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+    <table border="3px;" class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>Contact</th>
+            </tr>
+        </thead>
+        <tbody class="table-success">
+            <tr ng-repeat="user in users">
+                <td>{{user.name}}</td>
+                <td>{{user.Age}}</td>
+                <td>{{user.City}}</td>
+                <td>{{user.Contact}}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
